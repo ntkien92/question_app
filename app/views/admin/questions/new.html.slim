@@ -1,0 +1,5 @@
+h3
+  = t('.create')
+= form_for @question, url: admin_questions_path do |f|
+  = render 'errors', resouce: @question
+  = render partial: 'form', locals: {f: f}

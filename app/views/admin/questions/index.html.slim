@@ -1,0 +1,19 @@
+.wrapper
+  .content-main
+    .table-responsive
+      table.table.table-striped
+        thead
+          tr
+            th
+              | ID
+            th
+              | Japanese
+            th
+              | Vietnamese
+            th
+            th
+        tbody
+          = render partial: 'question', collection: @questions
+
+= link_to 'Create', new_admin_question_path, class: 'btn btn-info'
+

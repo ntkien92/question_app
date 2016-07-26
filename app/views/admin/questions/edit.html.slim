@@ -1,0 +1,5 @@
+h3
+  = t('.update')
+= form_for @question, url: admin_question_path do |f|
+  = render 'errors', resouce: @question
+  = render partial: 'form', locals: {f: f}
